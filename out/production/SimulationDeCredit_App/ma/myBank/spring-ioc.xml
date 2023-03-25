@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="dao" class="ma.myBank.dao.daoVolatile.CréditDao"/>
+<bean id="metier" class="ma.myBank.métier.MétierCrédit">
+    <constructor-arg index="0" ref="dao"/>
+</bean>
+<bean id="controleur" class="ma.myBank.présentation.CreditControlleur">
+    <constructor-arg index="0" ref="metier"/>
+</bean>
+</beans>
