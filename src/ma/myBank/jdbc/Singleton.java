@@ -1,4 +1,4 @@
-package ma.Bankati.jdbc;
+package ma.myBank.jdbc;
 
 import javax.swing.*;
 import java.sql.*;
